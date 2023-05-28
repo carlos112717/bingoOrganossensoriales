@@ -36,6 +36,6 @@ function play() {
 }
 
 function playSound() {
-  var audio = new Audio('sounds/elefante.mp3');
+  var audio = new Audio('sounds/descripcionJuego.mp3');
   audio.play();
 }
