@@ -1,0 +1,127 @@
+.container{
+    display: flex;
+    margin-top: 60px !important;
+}
+
+.tablas{
+  margin-top: 100px !important;
+}
+
+.tablas h1{
+  font-size: 25px;
+}
+.grid-container {
+    float: right;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.card-group{
+  display: grid;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 60%;
+  perspective: 1000px;
+  cursor: pointer;
+  border: 2px solid #000;
+}
+
+.card-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.6);
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  backface-visibility: hidden;
+}
+
+.game-container{
+    float: right;
+    width: 30%;
+    position: relative;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.play-button {
+    margin-bottom: 20px;
+}
+
+.word-display {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.audio-display{
+  visibility: hidden;
+}
+
+main{
+    margin: 40 auto;
+    padding: 50px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Rosarivo', serif;
+}
+.container_title{
+    margin: 10 auto;
+    padding-bottom: 20px;
+}
+
+footer {
+  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+  font-family: 'Rosarivo' Georgia, 'Times New Roman', Times, serif;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}

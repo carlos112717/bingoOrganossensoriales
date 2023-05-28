@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Bingo</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--Fonts google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rosarivo&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+  <main>
+    <div class="container_title">
+      <h1>Prueba tu percepción con órganos sensoriales </h1>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="game-container">
+          <div class="audio-display" id="audio-display"></div>
+        </div>
+
+        <!-- modal tabalas-->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Ver formas de ganar
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Así puedes ganar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!--tablas-->
+                <div class="card-group">
+                  <div class="card">
+                    <img src="images/forma1.png" class="card-img-top" alt="foma1">
+                  </div>
+                  <div class="card">
+                    <img src="images/forma2.png" class="card-img-top" alt="foma2">
+                  </div>
+                  <div class="card">
+                    <img src="images/forma3.png" class="card-img-top" alt="foma3">
+                  </div>
+                  <div class="card">
+                    <img src="images/forma4.png" class="card-img-top" alt="foma4">
+                  </div>
+                  <div class="card">
+                    <img src="images/forma5.png" class="card-img-top" alt="foma5">
+                  </div>
+                  <div class="card">
+                    <img src="images/forma6.png" class="card-img-top" alt="foma6">
+                  </div>
+                  <div class="card">
+                    <img src="images/forma7.png" class="card-img-top" alt="foma7">
+                  </div>
+                  <div class="card">
+                    <img src="images/forma8.png" class="card-img-top" alt="foma8">
+                  </div>
+                  <div class="card">
+                    <img src="images/forma9.png" class="card-img-top" alt="foma9">
+                  </div>
+                  <div class="card">
+                    <img src="images/forma10.png" class="card-img-top" alt="foma10">
+                  </div>
+                  <div class="card">
+                    <img src="images/forma11.png" class="card-img-top" alt="foma11">
+                  </div>
+                </div>
+
+                <!--Fin tablas-->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Salir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Fin Modal-->
+      </div>
+
+
+    <div class="col-md-8">
+    <div class="grid-container">
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/cat.jpg" alt="Imagen 1" class="card-img">
+        </div>
+        <div class="card-back">
+          <img src="images/reverse.jpg" alt="Imagen Reversa 2" class="card-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/cinco.jpg" alt="Imagen 1" class="card-img">
+        </div>
+        <div class="card-back">
+          <img src="images/reverse.jpg" alt="Imagen Reversa 2" class="card-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/cow.jpg" alt="Imagen 1" class="card-img">
+        </div>
+        <div class="card-back">
+          <img src="images/reverse.jpg" alt="Imagen Reversa 2" class="card-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/cuatro.jpg" alt="Imagen 1" class="card-img">
+        </div>
+        <div class="card-back">
+          <img src="images/reverse.jpg" alt="Imagen Reversa 2" class="card-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/diez.jpg" alt="Imagen 1" class="card-img">
+        </div>
+        <div class="card-back">
+          <img src="images/reverse.jpg" alt="Imagen Reversa 2" class="card-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/dog.jpg" alt="Imagen 1" class="card-img">
+        </div>
+        <div class="card-back">
+          <img src="images/reverse.jpg" alt="Imagen Reversa 2" class="card-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/dos.png" alt="Imagen 1" class="card-img">
+        </div>
+        <div class="card-back">
+          <img src="images/reverse.jpg" alt="Imagen Reversa 2" class="card-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/elefante.jpg" alt="Imagen 1" class="card-img">
+        </div>
+        <div class="card-back">
+          <img src="images/reverse.jpg" alt="Imagen Reversa 2" class="card-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/hen.jpg" alt="Imagen 1" class="card-img">
+        </div>
+        <div class="card-back">
+          <img src="images/reverse.jpg" alt="Imagen Reversa 2" class="card-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/horse.jpg" alt="Imagen 1" class="card-img">
+        </div>
+        <div class="card-back">
+          <img src="images/reverse.jpg" alt="Imagen Reversa 2" class="card-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/jirafa.png" alt="Imagen 1" class="card-img">
+        </div>
+        <div class="card-back">
+          <img src="images/reverse.jpg" alt="Imagen Reversa 2" class="card-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/nueve.jpg" alt="Imagen 1" class="card-img">
+        </div>
+        <div class="card-back">
+          <img src="images/reverse.jpg" alt="Imagen Reversa 2" class="card-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/ocho.jpg" alt="Imagen 1" class="card-img">
+        </div>
+        <div class="card-back">
+          <img src="images/reverse.jpg" alt="Imagen Reversa 2" class="card-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/oso.jpg" alt="Imagen 1" class="card-img">
+        </div>
+        <div class="card-back">
+          <img src="images/reverse.jpg" alt="Imagen Reversa 2" class="card-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/raton.png" alt="Imagen 1" class="card-img">
+        </div>
+        <div class="card-back">
+          <img src="images/reverse.jpg" alt="Imagen Reversa 2" class="card-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/seis.png" alt="Imagen 1" class="card-img">
+        </div>
+        <div class="card-back">
+          <img src="images/reverse.jpg" alt="Imagen Reversa 2" class="card-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/sheep.jpg" alt="Imagen 1" class="card-img">
+        </div>
+        <div class="card-back">
+          <img src="images/reverse.jpg" alt="Imagen Reversa 2" class="card-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/siete.jpg" alt="Imagen 1" class="card-img">
+        </div>
+        <div class="card-back">
+          <img src="images/reverse.jpg" alt="Imagen Reversa 2" class="card-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/tres.jpg" alt="Imagen 1" class="card-img">
+        </div>
+        <div class="card-back">
+          <img src="images/reverse.jpg" alt="Imagen Reversa 2" class="card-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/uno.jpg" alt="Imagen 1" class="card-img">
+        </div>
+        <div class="card-back">
+          <img src="images/reverse.jpg" alt="Imagen Reversa 2" class="card-img">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom_play">
+    <button class="btn btn-primary play-button" onclick="play()">Jugar</button>
+  </div>
+</div>
+
+  </main>
+  <footer class="mt-auto">
+    <div class="container">
+      <p class="text-center">© 2023 Pruebas de percepción. Todos los derechos reservados</p>
+      <ul>
+        <li>Jessica Lorena Tobón García</li>
+        <li>Pepito perez</li>
+      </ul>
+      <ul>
+        <li>Fulanito de tal</li>
+        <li>Sacarias piedras</li>
+      </ul>
+    </div>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>
