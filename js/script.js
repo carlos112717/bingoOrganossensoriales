@@ -34,3 +34,8 @@ function play() {
   // Agregar el audio reproducido a la lista de audios ya reproducidos
   playedAudios.push(randomAudio);
 }
+
+function playSound() {
+  var audio = new Audio('sounds/elefante.mp3');
+  audio.play();
+}
