@@ -39,3 +39,8 @@ function playSound() {
   var audio = new Audio('sounds/descripcionJuego.mp3');
   audio.play();
 }
+
+function playSoundModal(){
+  var audioModal = new Audio('sounds/audioReglas2.mp3');
+  audioModal.play();
+}
